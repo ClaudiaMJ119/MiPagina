@@ -1,0 +1,110 @@
+---
+import Layout from '../layouts/Layout.astro';
+import BootstrapCard from '../components/BootstrapCard.astro';
+import 'animate.css';
+---
+
+<Layout title="Sobre mí">
+	<section id="Biografia">
+		<div class="text-justify ">
+			<div class="row ">
+			  <div class="col-7 bg-3" >
+				<h1 style=" margin-top:130px; margin-left:300px;">Sobre Mí</h1>
+				<p style=" margin-top:50px; padding-right:130px; padding-left:150px; margin-bottom:80px;" >Mi nombre es Claudia Martínez (MJ), soy Mexicana, Guanajuatense apasionada por el arte, más concretamente, por la creación de Vídeo y fotografía.
+
+					Mi trayectoria creando contenido para estás áreas ha sido un poco corta pero ha dejado muchos frutos, ya que empecé con mi trabajo profesionalmente desde 2019 con la dirección del documental "Die Mortis". <br> <br>
+					A lo largo de mi trayectoria he tenido un interés genuino por la producción completa de vídeos, desde la planificación hasta su realización. En mis tiempos libres pongo manos a la obra creando diversos 
+					proyectos de vídeo y fotografía que he enfocado principalmente a conceptos personales, ya que la pandemia nos limito un poco a interacciones entre personas. Afortunadamente he tenido la oportunidad de tomar
+					fotografías de retrato a personas de mis círculos cercanos y he podido trabajar en diversos proyectos audiovisuales durante este tiempo.<br> <br>
+					Me encuentro constantemente en la búsqueda de nuevas ideas para poder realizar diversos proyectos tanto fotográficos cómo videográficos.</p>
+			  </div>
+			  <div class="col" style="background-color:  #5074B4;">
+				<img src="/FotoH2.png" class="responsive" alt="..." style="width:80%; margin-top:120px; margin-bottom:50px;">
+			  </div>
+			</div>
+		</div>
+
+	</section>
+	<section id="Software y Habilidades">
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs="true">
+			<div class="carousel-inner">
+			  <div class="carousel-item ">
+				<img src="/Fondo/Habilidades.jpg" class="d-block w-100" alt="...">
+			  </div>
+			  <div class="carousel-item active">
+				<img src="/Fondo/HyS.jpg" class="d-block w-100" alt="...">
+			  </div>
+			  <div class="carousel-item">
+				<img src="/Fondo/Software.jpg" class="d-block w-100" alt="...">
+			  </div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Next</span>
+			</button>
+		  </div>
+	</section>
+
+	<section id="SeparadorClientes" class=" bg-3 text-center">
+		<div class="bg-sn">
+			<p style="font-size: 6px;">-.-</p>
+			<h1 style="color: #F4F4F4;"> Clientes</h1>
+		</div>
+	</section>
+
+	<section id="clientes" class="bg-3">
+		<div style="padding-top:30px; padding-bottom: 30px; color:#1c1c1c;">
+			<h2 class="text-center">Fotografía</h2>
+		</div>
+		<div class="row text-center" style="padding-bottom:100px;">
+			<div class="col">
+				<img src="/C5.png" alt="..." style="width:50%;">
+				<h5> Meidell</h5>
+			</div>
+			<div class="col">
+				<img src="/C6.png" alt="..." style="width:50%;">
+				<h5> Boneless Kingdom</h5>
+			</div>
+			<div class="col">
+				<img src="/C7.png" alt="..." style="width:50%;">
+				<h5> Edgar Soria</h5>
+			</div>
+		  </div>
+
+		  <div style="padding-top:30px; padding-bottom: 30px; color:#1c1c1c;" class="text-center">
+			<h1>Colaboraciones</h1>
+			<h2 style="padding-top:30px;">Vídeo</h2>
+			<p> He tenido la fortuna de trabajar con diferentes productoras 
+			<br>audiovisuales en distintos proyectos.
+			<br> A continuación menciono mi labor en cada proyecto.</p>
+		  </div>
+
+		  <div class="row text-center" style="padding-bottom:50px;">
+			<div class="col">
+				<img src="/C1.png" alt="..." style="width:50%;">
+				<h5> Iridiscente</h5>
+				<p style="padding:10px;">Cámara secundaria en el documental "Incidental" (2021)</p>
+			</div>
+			<div class="col">
+				<img src="/C2.png" alt="..." style="width:50%;">
+				<h5> Fish Studio</h5>
+				<p style="padding:10px;">Dirección, producción edición de videos musicales en el especial de Día de muertos: "La llorona", "Crisantemos"</p>
+			</div>
+			<div class="col">
+				<img src="/C3.png" alt="..." style="width:50%;">
+				<h5> Escape Room Studio</h5>
+				<p style="padding:10px;">Cámara secundaria en la serie de Live Sessión (2021)</p>
+			</div>
+			<div class="col">
+				<img src="/C4.png" alt="..." style="width:50%;">
+				<h5> Caja Negra</h5>
+				<p style="padding:10px;">Dirección de arte en el cortometraje "Ya no me vas a doler" (2022)</p>
+			</div>
+		  </div>
+	</section>
+	
+</Layout>

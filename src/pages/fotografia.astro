@@ -1,0 +1,352 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Galeria, {GaleriaConfig} from '../components/Galeria.astro';
+import GaleriaModal, {GaleriaModalConfig} from '../components/GaleriaModal.astro';
+
+const configGaleriaPrincipal: GaleriaConfig = {
+    id: "Galeria Principal",
+    columnas: [
+        {
+            imagenes: [
+                {
+                    titulo: "imagen1",
+                    alt: "imagen1",
+                    src: "/Galeria/A1.png"
+                },
+                {
+                    titulo: "imagen4",
+                    alt: "imagen4",
+                    src: "/Galeria/A4.png"
+                }
+                ,
+                {
+                    titulo: "imagen4",
+                    alt: "imagen4",
+                    src: "/Galeria/A7.png"
+                }
+                ,
+                {
+                    titulo: "imagen4",
+                    alt: "imagen4",
+                    src: "/Galeria/A10.png"
+                }
+            ],
+        },
+        {
+            imagenes: [
+                {
+                    titulo: "imagen1",
+                    alt: "imagen1",
+                    src: "/Galeria/A2.png"
+                },
+                {
+                    titulo: "imagen4",
+                    alt: "imagen4",
+                    src: "/Galeria/A5.png"
+                }
+                ,
+                {
+                    titulo: "imagen4",
+                    alt: "imagen4",
+                    src: "/Galeria/A8.png"
+                }
+                ,
+                {
+                    titulo: "imagen4",
+                    alt: "imagen4",
+                    src: "/Galeria/A11.png"
+                }
+            ],
+        },
+        {
+            imagenes: [
+                {
+                    titulo: "imagen2",
+                    alt: "imagen2",
+                    src: "/Galeria/A3.png"
+                },
+                {
+                    titulo: "imagen5",
+                    alt: "imagen5",
+                    src: "/Galeria/A6.png"
+                }
+                ,
+                {
+                    titulo: "imagen4",
+                    alt: "imagen4",
+                    src: "/Galeria/A9.png"
+                }
+                ,
+                {
+                    titulo: "imagen4",
+                    alt: "imagen4",
+                    src: "/Galeria/A12.png"
+                }
+            ],
+        },
+        
+    ]
+};
+
+const configGaleriaModalPrincipal: GaleriaModalConfig = {
+    id: configGaleriaPrincipal.id, titulo: "Galeria - Principal"
+};
+
+const configGaleriaSecundaria: GaleriaConfig = {
+    id: "Galeria Secundaria",
+    columnas: [
+        {
+            imagenes: [
+                {
+                    titulo: "imagenA",
+                    alt: "imagenA",
+                    src: "/Galeria/B1.png"
+                },
+                {
+                    titulo: "imagenC",
+                    alt: "imagenC",
+                    src: "/Galeria/B4.png"
+                },
+                {
+                    titulo: "imagenC",
+                    alt: "imagenC",
+                    src: "/Galeria/B7.png"
+                },
+                {
+                    titulo: "imagenC",
+                    alt: "imagenC",
+                    src: "/Galeria/B10.png"
+                }
+            ],
+        },
+        {
+            imagenes: [
+            {
+                    titulo: "imagenA",
+                    alt: "imagenA",
+                    src: "/Galeria/B2.png"
+                },
+                {
+                    titulo: "imagenC",
+                    alt: "imagenC",
+                    src: "/Galeria/B5.png"
+                },
+                {
+                    titulo: "imagenC",
+                    alt: "imagenC",
+                    src: "/Galeria/B8.png"
+                },
+                {
+                    titulo: "imagenC",
+                    alt: "imagenC",
+                    src: "/Galeria/B11.png"
+                }
+            ],
+        },{
+            imagenes: [
+            {
+                    titulo: "imagenA",
+                    alt: "imagenA",
+                    src: "/Galeria/B3.png"
+                },
+                {
+                    titulo: "imagenC",
+                    alt: "imagenC",
+                    src: "/Galeria/B6.png"
+                },
+                {
+                    titulo: "imagenC",
+                    alt: "imagenC",
+                    src: "/Galeria/B9.png"
+                },
+                {
+                    titulo: "imagenC",
+                    alt: "imagenC",
+                    src: "/Galeria/B12.png"
+                }
+            ],
+        },
+        
+    ]
+};
+
+const configGaleriaModalSecundaria: GaleriaModalConfig = {
+    id: configGaleriaSecundaria.id, titulo: "Galeria - Secundaria"
+};
+
+const configGaleriaTercera: GaleriaConfig = {
+    id: "Galeria Tercera",
+    columnas: [
+        {
+            imagenes: [
+                {
+                    titulo: "imagenA",
+                    alt: "imagenA",
+                    src: "/Galeria/C1.png"
+                },
+                {
+                    titulo: "imagenC",
+                    alt: "imagenC",
+                    src: "/Galeria/C4.png"
+                },
+                {
+                    titulo: "imagenC",
+                    alt: "imagenC",
+                    src: "/Galeria/C7.png"
+                },
+            ],
+        },
+        {
+            imagenes: [
+            {
+                    titulo: "imagenA",
+                    alt: "imagenA",
+                    src: "/Galeria/C2.png"
+                },
+                {
+                    titulo: "imagenC",
+                    alt: "imagenC",
+                    src: "/Galeria/C5.png"
+                },
+                {
+                    titulo: "imagenC",
+                    alt: "imagenC",
+                    src: "/Galeria/C8.png"
+                },
+            ],
+        },{
+            imagenes: [
+            {
+                    titulo: "imagenA",
+                    alt: "imagenA",
+                    src: "/Galeria/C3.png"
+                },
+                {
+                    titulo: "imagenC",
+                    alt: "imagenC",
+                    src: "/Galeria/C6.png"
+                },
+                {
+                    titulo: "imagenC",
+                    alt: "imagenC",
+                    src: "/Galeria/C9.png"
+                },
+            ],
+        },
+        
+    ]
+};
+
+const configGaleriaModalTercera: GaleriaModalConfig = {
+    id: configGaleriaTercera.id, titulo: "Galeria - Tercera"
+};
+
+const configGaleriaQuinta: GaleriaConfig = {
+    id: "Galeria Quinta",
+    columnas: [
+        {
+            imagenes: [
+                {
+                    titulo: "imagenA",
+                    alt: "imagenA",
+                    src: "/Galeria/D1.png"
+                },
+                {
+                    titulo: "imagenC",
+                    alt: "imagenC",
+                    src: "/Galeria/D4.png"
+                },
+            ],
+        },
+        {
+            imagenes: [
+            {
+                    titulo: "imagenA",
+                    alt: "imagenA",
+                    src: "/Galeria/D2.png"
+                },
+                {
+                    titulo: "imagenC",
+                    alt: "imagenC",
+                    src: "/Galeria/D5.png"
+                },
+            ],
+        },{
+            imagenes: [
+            {
+                    titulo: "imagenA",
+                    alt: "imagenA",
+                    src: "/Galeria/D3.png"
+                },
+                {
+                    titulo: "imagenC",
+                    alt: "imagenC",
+                    src: "/Galeria/D6.png"
+                },
+            ],
+        },
+        
+    ]
+};
+
+const configGaleriaModalQuinta: GaleriaModalConfig = {
+    id: configGaleriaQuinta.id, titulo: "Galeria - Quinta"
+};
+
+---
+<Layout title="Galeria">
+    
+        <section id="Portada">
+            <div class="...">
+                <img src="/Fondo/FondoPortafolio.jpg" alt="Portada Srikandi" style="width: 100%;">
+            </div>	
+        </section>
+    <main class="bg-3">
+
+        <section class="container-fluid text-center"> 
+			<div style="padding-top:30px; padding-bottom: 30px; color:#1c1c1c;">
+				<h2 >Fotografía</h2>
+			<p> En esta sección encontrarás mi trabajo dividido por secciones,
+			<br>desde la realización de retratos, pasando por proyectos personales
+			<br> y finalizando con algunos trabajos para clientes.</p>
+			</div>
+		</section>
+
+        <section class="container" style="padding-bottom:100px;" >
+
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-retrato-tab" data-bs-toggle="tab" data-bs-target="#nav-retrato" type="button" role="tab" aria-controls="nav-retrato" aria-selected="true">Retrato</button>
+                  <button class="nav-link" id="nav-Lottery-tab" data-bs-toggle="tab" data-bs-target="#nav-Lottery" type="button" role="tab" aria-controls="nav-Lottery" aria-selected="false">Surreal Lottery</button>
+                  <button class="nav-link" id="nav-color-tab" data-bs-toggle="tab" data-bs-target="#nav-color" type="button" role="tab" aria-controls="nav-color" aria-selected="false">Mis Colores</button>
+                  <button class="nav-link" id="nav-producto-tab" data-bs-toggle="tab" data-bs-target="#nav-producto" type="button" role="tab" aria-controls="nav-producto" aria-selected="false">Producto</button>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-retrato" role="tabpanel" aria-labelledby="nav-retrato-tab" tabindex="0">
+                    <h1 class="pt-5 text-center"> Retrato</h1>
+                    <Galeria config= {configGaleriaPrincipal} />
+                    <GaleriaModal config={configGaleriaModalPrincipal}/>
+                </div>
+                <div class="tab-pane fade" id="nav-Lottery" role="tabpanel" aria-labelledby="nav-Lottery-tab" tabindex="0">
+                    <h1 class="pt-5 text-center"> Surreal Lotery </h1>
+                    <p class="text-center">En colaboración con <a href="https://www.instagram.com/crimson.demon_art/">@crimson.demon_art</a>, Ilustrador.</p>
+                    <Galeria config= {configGaleriaSecundaria} />
+                    <GaleriaModal config={configGaleriaModalSecundaria}/>
+                </div>
+                <div class="tab-pane fade" id="nav-color" role="tabpanel" aria-labelledby="nav-color-tab" tabindex="0">
+                    <h1 class="pt-5 text-center"> El sonar de mis colores </h1>
+                    <Galeria config= {configGaleriaTercera} />
+                    <GaleriaModal config={configGaleriaModalTercera}/>
+                </div>
+                    <div class="tab-pane fade" id="nav-producto" role="tabpanel" aria-labelledby="nav-producto-tab" tabindex="0">
+                        <h1 class="pt-5 text-center"> Producto</h1>
+                        <Galeria config= {configGaleriaQuinta} />
+                        <GaleriaModal config={configGaleriaModalQuinta}/>
+                </div>
+              </div>
+        </section>
+        
+    </main>
+
+</Layout>

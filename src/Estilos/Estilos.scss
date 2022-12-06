@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Marko+One&family=Rubik&display=swap');
+
+$primary: #3E0A5C;
+$primaryM: #3E0A5C;
+$secondaryA: #5074B4;
+$secondaryM: #73097F;
+$danger: #F1D418;
+$light: #F4F4F4 ; 
+$dark: #1C1C1C ;
+$font-family-base: 'Rubik', sans-serif;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+h1 {
+    font-family: 'Marko One', serif;
+    size: 80% ;
+}
+h2 {
+    font-family: 'Marko One', serif;
+    
+}
+
+h3{
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
+}
+
+.fontT{
+
+    font-family: 'Rubik', sans-serif;
+    size: 50px;
+
+}
+
+.bg-1{
+	background-attachment: fixed;
+    background-position: center;
+	background-image: url( "/Fondo/Negro.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg-2{
+	background-attachment: fixed;
+    background-position: center;
+	background-image: url( "/Fondo/NegroLinea.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg-3{
+	background-attachment: fixed;
+    background-position: center;
+	background-image: url( "/Fondo/Blanco.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg-sn {
+    background-position: center;
+    height:150px ;
+	background-image: url( "/SeparadorNegro.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg-sb {
+    background-position: center;
+    height:150px ;
+	background-image: url( "/SeparadorBlanco.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg-rs{
+  background-attachment:unset;
+    background-position: center;
+    width: 99%;
+	background-image: url( "/Fondo/Fondo-Redes.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.animate__animated.animate__bounce {
+	--animate-duration: 3s;
+  }
